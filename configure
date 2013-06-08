@@ -5270,7 +5270,7 @@ fi
 if test -z "$RANLIB"; then
     # Necessary on Darwin to deal with common symbols (particularly when
     # using ifort).
-    if  "$SYSDEF"x = DARWINx ; then
+    if test "$SYSDEF"x = DARWINx; then
         RANLIB="ranlib -c"
     else
         if test -n "$ac_tool_prefix"; then

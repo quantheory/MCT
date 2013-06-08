@@ -574,7 +574,7 @@ fi
 if test -z "$RANLIB"; then
     # Necessary on Darwin to deal with common symbols (particularly when
     # using ifort).
-    if [ "$SYSDEF"x = DARWINx ]; then
+    if test "$SYSDEF"x = DARWINx; then
         RANLIB="ranlib -c"
     else
         AC_PROG_RANLIB
